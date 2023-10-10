@@ -1,3 +1,9 @@
+:root {
+  --main-border: black 5px solid;
+  --element-border: black 1px solid;
+  --section-margin: 50px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,17 +13,47 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-}
+  background-color: blanchedalmond;
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6,p {
   margin: 0;
 }
 
-p {
-  margin: 0;
+/* Class for header container - to create flexbox container */
+.header-container {
+  border: var(--main-border);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  min-height: 80px;
+}
+
+.header-menu-container {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero-banner {
+  border: var(--main-border);
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  column-gap: 50px;
+  margin: var(--section-margin);
+}
+
+.image {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+
+footer {
+  margin: var(--section-margin);
+  border: var(--main-border);
+  text-align: center;
 }
