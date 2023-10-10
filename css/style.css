@@ -51,6 +51,68 @@ h1,h2,h3,h4,h5,h6,p {
   max-height: 300px;
 }
 
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    "about work work"
+    "contact work work";
+  border: var(--main-border);
+  margin: var(--section-margin);
+  padding: 10px;
+}
+
+#about {
+  grid-area: about;
+}
+
+#work {
+  grid-area: work;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+.work-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+    "title title title"
+    "work-item-1 work-item-2 work-item-3"
+    "work-item-4 work-item-5 work-item-6";
+}
+
+#work-title {
+  grid-area: title;
+}
+
+#work-item-1 {
+  grid-area: work-item-1;
+}
+
+#work-item-2 {
+  grid-area: work-item-2;
+}
+
+#work-item-3 {
+  grid-area: work-item-3;
+}
+
+#work-item-4 {
+  grid-area: work-item-4;
+}
+
+#work-item-5 {
+  grid-area: work-item-5;
+}
+
+#work-item-6 {
+  grid-area: work-item-6;
+}
+
 
 footer {
   margin: var(--section-margin);
